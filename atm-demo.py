@@ -17,7 +17,8 @@ while True:
         user_pin = int(input("Set the PIN : "))
     if blocked == True:
         print("Your Card has been blocked, contact your Branch manager to unblock")
-        break
+        inserted = False
+        continue
     enter_pin = int(input("Enter your PIN : ")) 
 
     if enter_pin == user_pin:
